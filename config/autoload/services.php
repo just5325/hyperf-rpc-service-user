@@ -13,8 +13,8 @@ return [
     // 服务驱动相关配置
     'drivers' => [
         'consul' => [
-            'uri' => 'http://10.96.229.101:8500',
-            'token' => '',
+            'uri' => env('CONSUL_URI', ''),
+            'token' => env('CONSUL_TOKEN', ''),
             'check' => [
                 'deregister_critical_service_after' => '90m',
                 'interval' => '1s',

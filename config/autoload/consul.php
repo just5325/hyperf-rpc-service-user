@@ -10,6 +10,6 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 return [
-    'uri' => 'http://10.96.229.101:8500',
-    'token' => '',
+    'uri' => env('CONSUL_URI', ''),
+    'token' => env('CONSUL_TOKEN', ''),
 ];
