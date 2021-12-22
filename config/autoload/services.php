@@ -13,7 +13,7 @@ return [
     // 服务驱动相关配置
     'drivers' => [
         'consul' => [
-            'uri' => 'http://172.17.0.3:8500',
+            'uri' => 'http://10.96.229.101:8500',
             'token' => '',
             'check' => [
                 'deregister_critical_service_after' => '90m',
